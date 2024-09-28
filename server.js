@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+app.get('/test', (req, res) => {
+  res.send("Test route works!");
+});
 // Serve static files from the 'frontend' directory
 app.use("/", express.static("./frontend"));
 
