@@ -1,12 +1,8 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;  // Use Vercel's assigned port or default to 3000
+var express = require('express');
+var app=express();
 
-app.use("/", express.static("./frontend"));
+app.use("/",express.static("./frontend"))
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-
+app.listen(8081)
 module.exports = app;
 // module.exports = app;
