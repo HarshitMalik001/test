@@ -7,7 +7,7 @@ app.use(express.static("frontend"));
 
 // Route for the root URL ("/")
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+  res.sendFile(path.join(__dirname, './frontend', 'index.html'));
 });
 
 // Use the port assigned by Vercel or default to 3000 for local development
