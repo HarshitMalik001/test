@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body>
+    <p id="diclar" style="color: red;"></p>
+    <div class="mainbox">
+        <form id="loginform">
+            <h1 style="text-align: center;  margin-top: 40px; margin-bottom: 50px;">Login</h1>
+            <input type="text" placeholder="Name" name="Name" id="Name" class="em" required>
+            <input type="password" id="pass" placeholder="Password" name="Pass" value="" class="em" required minlength="5">
+            <br>
+            <input type="checkbox" name="r" id="rem"><label for="rem">Remember me</label> <a href="#"
+                style="text-decoration: none;">Forgot Password</a>
+            <br>
+            <input type="submit" class="submit-button"  value="Login">
+            <br>
+            <p>Don't have an account <a href="signup.html">register</a></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

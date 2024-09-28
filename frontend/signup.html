@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    
+</head>
+ 
+<body>
+    <div class="mainbox">
+        <form id="signupform">
+            <h1 class="heading" >Sign up</h1>
+
+            <input type="text" placeholder="Name" id="name" name="name" class="en" required>
+            <input type="email" placeholder="Email" id="mail" name="Email" class="em" required>
+
+            <input type="password" placeholder="Password" id="password" name="Pass" value="" class="em" required minlength="5">
+            <br>
+
+            <input type="password" placeholder="Confirm Password" id="cpassword" name="Pass" value="" class="em" required minlength="5">
+            <br>
+
+            <input type="checkbox" name="r" id="rem"><label for="rem">Remember me</label>
+            <br>
+
+            <input type="checkbox" name="b" id="q"><label for="q">I agree to Terms of Service and PrivacyPolicy.</label>
+
+            <input type="submit" class="submit-button" value="Create an account">
+            <br>
+            <p>Already have an account <a href="login.html">login</a></p>
+        </form>
+    </div>
+    
+    <script src="signup.js"></script> 
+</body>
+</html>

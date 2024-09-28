@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="Create.css">
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <!-- nav -->
+
+            <input type="checkbox" id="check1" class="check1">
+            <div class="sidebar">
+                <div class="side-head">
+                    <label class="cross" for="check1">
+                        <span class="Cross">X</span>
+                    </label>
+
+                    <a href="signup.html" class="sign-up">Sign-up</a>
+                    <a href="login.html" class="sign-up">Login</a>
+                </div>
+
+                <div class="sidebar-options">
+                    <h2 class="side-h2">Try </h2>
+                    <a href="#" class="side-button">Genral Knowledge</a>
+                    <a href="#" class="side-button">Science</a>
+                    <a href="#" class="side-button">English</a>
+                    <a href="#" class="side-button">Math</a>
+                </div>
+            </div>
+
+            <nav class="head">
+                <div class="head-front">
+
+                    <label for="check1">
+                        <span class="">=</span>
+                    </label>
+
+                    <div class="bar">
+                        <a href="index.html" class="logo">QuizGame</a>
+                        <a href="signup.html" id="sign-up" class="button">SIGN UP</a>
+                        <a href="login.html" id="login" class="button">LOGIN</a>
+                        <button class="Create-button" onclick="TakeMeToCreatePage()">Create + </button>
+                    </div>
+
+                </div>
+
+
+                <div class="head-back">
+
+                    <div class="search-box">
+                        <i class=""></i>
+                        <input class="search" type="text" placeholder="Search">
+                    </div>
+
+                    <div class="profile" onclick="CheckLogIn()">
+                        <span class="" id="UserName">NOT FOUND</span>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- Nav end -->
+            <div class="form-container">
+                <h1 class="page-title">This is the Create Page</h1>
+                <form id="Create-own-Quest" class="quiz-form">
+                    <input type="text" class="input-field" placeholder="Title of Your Quiz" id="Title" required> <br>
+                    <input type="time" class="input-field" id="From" required>
+                    <input type="time" class="input-field" id="To" required> <br>
+                    <input type="number" class="input-field" placeholder="No Of Questions" id="NoOfQuestions"
+                        required><br>
+                    <input type="number" class="input-field" placeholder="Time in Sec" id="Time" required><br>
+                    <input type="text" class="input-field" placeholder="Image Link" id="ImgLink" required> <br>
+                    <label for="category" class="category-label">Choose a category:</label>
+                    <select id="category" name="category" class="input-field">
+                        <option value="9">General Knowledge</option>
+                        <option value="23">History</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="12">Music</option>
+                        <option value="26">Celebrity</option>
+                    </select> <br>
+                    <input type="submit" class="submit-button" value="Create Quiz">
+                </form>
+                <div class="custom-button-container">
+                    <button class="custom-button">Create Custom</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="head.js"></script>
+        <script src="Create.js"></script>
+</body>
+
+</html>
+
+<!-- { title: "General Knowledge Quiz", from: "9:00 AM", to: "9:00 PM", NoOfQuestions: 10, time: 300, imgLink: "https://www.themanthanschool.co.in/blog/wp-content/uploads/2019/12/general-knowledge.jpg", category: 9 }, -->

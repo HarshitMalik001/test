@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the MCQ Quiz</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="head.css">
+</head>
+
+<body>
+  <div class="main">
+    <!-- nav -->
+
+  <input type="checkbox" id="check1" class="check1">
+  <div class="sidebar">
+    <div class="side-head">
+      <label class="cross" for="check1">
+        <span class="Cross">X</span>
+      </label>
+  
+      <a href="signup.html" class="sign-up">Sign-up</a>
+      <a href="login.html" class="sign-up">Login</a>
+    </div>
+
+    <div class="sidebar-options">
+      <h2 class="side-h2">Try </h2>
+      <a href="#" class="side-button">Genral Knowledge</a>
+      <a href="#" class="side-button">Science</a>
+      <a href="#" class="side-button">English</a>
+      <a href="#" class="side-button">Math</a>
+    </div>
+  </div>
+
+    <nav class="head">
+      <div class="head-front">
+
+        <label for="check1">
+          <span class="">=</span>
+        </label>
+
+        <div class="bar">
+          <a href="index.html" class="logo">QuizGame</a>
+          <a href="signup.html" id="sign-up" class="button">SIGN UP</a>
+          <a href="login.html" id="login" class="button">LOGIN</a>
+          <button class="Create-button" onclick="TakeMeToCreatePage()">Create + </button>
+        </div>
+
+      </div>
+
+
+      <div class="head-back">
+
+        <div class="search-box">
+          <i class="">&#xf2bd</i>
+          <input class="search" type="text" placeholder="Search">
+        </div>
+
+        <div class="profile" onclick="CheckLogIn()">
+          <span class="" id="UserName">NOT FOUND</span>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Nav end -->
+
+    <div class="quizmain" id="quizmain">
+
+    </div>
+
+  </div>
+<script src="head.js"></script>
+<script src="index.js"></script>
+
+</body>
+
+</html>
